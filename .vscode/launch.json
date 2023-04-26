@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug file storage service",
+        "type": "node",
+        "request": "attach",
+        "port": 9229,
+        "sourceMaps": true,
+        "address": "localhost",
+        "localRoot": "${workspaceFolder}",
+        "remoteRoot": "/file-storage-src",
+        "restart": true
+      }
+    ]
+  }

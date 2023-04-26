@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  file-storage-service:
+      build:
+        context: ../
+        dockerfile: .devcontainer/Dockerfile
+      container_name: file-storage-service_c
+      ports:
+        - 3001:3001
+        - 9229:9229
+      volumes:
+        - ..:/file-storage-src:cached
+        - ../.ssh:/root/.ssh
+      command: /bin/sh -c "while sleep 1000; do :; done"
